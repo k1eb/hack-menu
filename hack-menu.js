@@ -9,7 +9,7 @@ const host = window.location.hostname;
     } else if (host.includes('quizlet.com')) {
         fetch("https://cdn.jsdelivr.net/gh/jokeri2222/Quizlet-Hack@latest/QuizletHack.user.js").then(r => r.text()).then(r => eval(r))
     } else if (host.includes('gimkit.com')) {
-        fetch("https://cdn.jsdelivr.net/gh/k1eb/hack-menu@latest/gimkit-backup.js").then(r => r.text()).then(r => eval(r))
+        fetch("https://raw.githubusercontent.com/k1eb/hack-menu/refs/heads/main/gimkit-backup.js").then(r => r.text()).then(r => eval(r))
     } else {
         alert('You are not on a supported website! Supported websites are:\nBlooket, Kahoot, Edpuzzle, Quizlet, Gimkit');
     }
